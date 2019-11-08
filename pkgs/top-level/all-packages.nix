@@ -6154,6 +6154,8 @@ in
 
   libmesode = callPackage ../development/libraries/libmesode {};
 
+  libmoz2d = callPackage ../development/libraries/libmoz2d { };
+
   libnabo = callPackage ../development/libraries/libnabo { };
 
   libngspice = callPackage ../development/libraries/libngspice { };
