@@ -9064,6 +9064,13 @@ in
   pharo-spur64 = assert stdenv.is64bit; pharo-vms.spur64;
   pharo-launcher = callPackage ../development/pharo/launcher { };
 
+  pharo7-vms = callPackage ../development/pharo7/vm { };
+  pharo7 = pharo-vms7.multi-vm-wrapper;
+  pharo7-cog32 = pharo-vms7.cog32;
+  pharo7-spur32 = pharo-vms7.spur32;
+  pharo7-spur64 = assert stdenv.is64bit; pharo-vms7.spur64;
+  pharo7-launcher = callPackage ../development/pharo7/launcher { };
+
   srandrd = callPackage ../tools/X11/srandrd { };
 
   srecord = callPackage ../development/tools/misc/srecord { };
